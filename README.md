@@ -10,3 +10,12 @@ Details
 
 CUB-200-2011: link：xxx, extraction code：xxx.
 Details
+|--CUB_200_2011 
+  |--images 
+       |--001...
+       |--002... 
+       ... 
+  |--classes.txt 
+  |--image_class_labels.txt 
+  |--image.txt 
+  |--train_test_split.txt
