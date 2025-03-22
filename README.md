@@ -17,18 +17,13 @@ Details
   |--images 
   
        |--001...
-       
        |--002... 
-       
        ... 
        
-  |--classes.txt 
+  |--cub_bird_train.txt 
   
-  |--image_class_labels.txt 
-  
-  |--image.txt 
-  
-  |--train_test_split.txt
+  |--cub_bird_test.txt
+
   
 Train
 python train.py
