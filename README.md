@@ -13,15 +13,11 @@ CUB-200-2011: link：xxx, extraction code：xxx.
 Details
 
 |--CUB_200_2011 
-
     |--images 
-  
        |--001...
        |--002... 
        ... 
-       
     |--cub_bird_train.txt 
-  
     |--cub_bird_test.txt
 
 Train
