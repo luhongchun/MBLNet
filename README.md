@@ -26,4 +26,5 @@ Train
 python train.py
 
 Citation
-...
+
+{...}
