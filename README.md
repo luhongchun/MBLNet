@@ -19,3 +19,7 @@ Details
   |--image_class_labels.txt 
   |--image.txt 
   |--train_test_split.txt
+Train
+python train.py
+Citation
+...
