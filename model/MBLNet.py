@@ -7,7 +7,6 @@ from pretrained.networks import resnet
 
 class MainNet(nn.Module):
     def __init__(self, num_classes, channels):
-        # nn.Module子类的函数必须在构造函数中执行父类的构造函数
         super(MainNet, self).__init__()
         self.num_classes = num_classes
         self.pretrained_model = resnet.resnet18(pretrained=True, pth_path=pretrain_path)
@@ -35,8 +34,8 @@ class ResNet(nn.Module):
                                             self.layer1, self.layer2, self.layer3, self.layer4, self.avgpool)
 
         self.hash_layer = nn.Linear(model_resnet.fc.in_features, hash_bit)
-        self.hash_layer.weight.data.normal_(0, 0.01) #.weight访问w  data就是w的值  .normal使用正态分布替换掉data的值
-        self.hash_layer.bias.data.fill_(0.0)# 偏置b置为零
+        self.hash_layer.weight.data.normal_(0, 0.01)
+        self.hash_layer.bias.data.fill_(0.0)
 
     def forward(self, x):
         x = self.feature_layers(x)

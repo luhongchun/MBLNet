@@ -1,8 +1,32 @@
-Multi-Branch and Multi-Loss Learning for Fine-Grained Image Retrieval (MBLNet)
+# MBLNet: Multi-Branch Learning Network for Fine-Grained Image Retrieval
 
-Dataset Preparation
+![MBLNet Architecture](./docs/architecture.jpg)
 
-Stanford Cars: link：https://pan.baidu.com/s/1a7wiMxwdzgWrRmK-clMDoA, extraction code：exw6.
+This repository provides the official implementation of **MBLNet**, a novel and highly reliable fine-grained deep hashing learning framework for accurate image retrieval in the presence of significant intra-class variation and small inter-class differences. 
+
+## 🌟 Highlights
+
+- 🔁 We propose a novel and highly reliable fine-grained deep hash learning framework MBLNet, which addresses the issues of fine-grained feature mining, noisy feature filtering and low retrieval accuracy simultaneously.
+- ✂️ a Dual-Selected Significant Region Erasure (DSSRE) method to enhance the generation of compact and discriminative binary hash codes.
+- 🧭 a Dual Filtering Object Location (DFOL) strategy to mine discriminative local features and focus on object-relevant regions.
+- 🔒 a new Multi-Stage Loss Function to guide effective network optimization.
+
+## 📦 Repository Structure
+
+```
+MBLNet/
+├── models/              # Network architecture definitions
+├── datasets/            # Dataset loading and preprocessing
+├── train.py             # Training script
+├── test.py              # Inference and evaluation
+├── utils/               # Helper functions
+├── docs/
+│   └── architecture.jpg # Network architecture diagram
+└── README.md            # Project documentation
+```
+## 📈 Dataset Preparation
+
+Stanford Cars: | [Download](https://pan.baidu.com/s/1a7wiMxwdzgWrRmK-clMDoA), extraction code：exw6.
 Details
 
 |--Stanford Cars 
@@ -14,7 +38,7 @@ Details
     |--Stanford_Cars_train.txt 
     |--Stanford_Cars_test.txt
 
-FGVC-Aircraft: link：https://pan.baidu.com/s/1M3EmSjgqd5eW34C8_w44wA, extraction code：zvz5.
+FGVC-Aircraft: | [Download](https://pan.baidu.com/s/1M3EmSjgqd5eW34C8_w44wA), extraction code：zvz5.
 Details
 
 |--FGVC-Aircraft 
@@ -26,7 +50,7 @@ Details
     |--aircraft_train.txt 
     |--aircraft_test.txt
     
-CUB-200-2011: link：https://pan.baidu.com/s/1wesLfqIZsoxhCBuVRa8Sag, extraction code：qqv4.
+CUB-200-2011: | [Download](https://pan.baidu.com/s/1wesLfqIZsoxhCBuVRa8Sag), extraction code：qqv4.
 Details
 
 |--CUB_200_2011 
@@ -38,10 +62,43 @@ Details
     |--cub_bird_train.txt 
     |--cub_bird_test.txt
 
-Train
+## 📊 Pretrained Models
 
-python train.py
+| Dataset   | Model Link |
+|-----------|------------|
+| Stanford Cars | [Download](https://github.com/luhongchun/MBLNet/blob/master/pretrained/pth/Stanford_Cars_48bits_model.pt) |
+| FGVC-Aircraft | [Download](https://github.com/luhongchun/MBLNet/blob/master/pretrained/pth/aircraft_48bits_model.pt) |
+| CUB-200-2011  | [Download](https://github.com/luhongchun/MBLNet/blob/master/pretrained/pth/cub_bird_48bits_model.pt) |
 
-Citation
+> 📁 Please place downloaded models in the `./pretrained/pth/` directory.
 
-{...}
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/luhongchun/MBLNet.git
+cd MBLNet
+pip install -r requirements.txt
+```
+
+## 🚀 Training
+
+```bash
+python train.py 
+```
+Modify the train file for different datasets or training settings.
+
+## 📄 Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@article{luCitation2025,
+  title={MBLNet: Multi-Branch Learning Network for Fine-Grained Image Retrieval},
+  author={Hongchun Lu, et al.},
+  journal={...},
+  year={2025}
+}
+```
+
+
+
