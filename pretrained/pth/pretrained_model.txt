@@ -1,0 +1,16 @@
+---pretrained model---
+
+Stanford_Cars_12bits_model.pt
+Stanford_Cars_24bits_model.pt
+Stanford_Cars_36bits_model.pt
+Stanford_Cars_48bits_model.pt
+
+aircraft  12bits_model.pt
+aircraft  24bits_model.pt
+aircraft_36bits_model.pt
+aircraft_48bits_model.pt
+
+cub_bird_12bits_model.pt
+cub_bird_24bits_model.pt
+cub_bird_36bits_model.pt
+cub_bird_48bits_model.pt
