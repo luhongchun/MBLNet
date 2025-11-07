@@ -96,10 +96,10 @@ If you find this work useful, please cite:
   title={MBLNet: Multi-Branch Learning Network for Fine-Grained Image Retrieval},
   author={Hongchun Lu, Min Han, Songlin He, Xue Li, Chase Wu},
   journal={Applied Soft Computing},
-  volume = {185},
-  pages = {113833},
+  volume={185},
+  pages={113833},
   year={2025},
-  doi = {https://doi.org/10.1016/j.asoc.2025.113833}
+  doi={https://doi.org/10.1016/j.asoc.2025.113833}
 }
 ```
 
