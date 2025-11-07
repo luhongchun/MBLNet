@@ -92,11 +92,14 @@ Modify the train file for different datasets or training settings.
 If you find this work useful, please cite:
 
 ```bibtex
-@article{luCitation2025,
+@article{LU2025113833,
   title={MBLNet: Multi-Branch Learning Network for Fine-Grained Image Retrieval},
-  author={Hongchun Lu, et al.},
-  journal={...},
-  year={2025}
+  author={Hongchun Lu, Min Han, Songlin He, Xue Li, Chase Wu},
+  journal={Applied Soft Computing},
+  volume = {185},
+  pages = {113833},
+  year={2025},
+  doi = {https://doi.org/10.1016/j.asoc.2025.113833}
 }
 ```
 
